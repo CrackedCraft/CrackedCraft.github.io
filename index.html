@@ -24,6 +24,8 @@
             transform: scale(0.9); /* Zoom out to 90% */
             transform-origin: center top;
             overflow-x: hidden; /* Hide horizontal scrollbar caused by zoom out */
+            position: relative; /* Ensure body covers full height */
+            min-height: 100vh; /* Ensure body covers full height */
         }
         header {
             background-color: rgba(0, 0, 0, 0.8);
@@ -33,7 +35,7 @@
             justify-content: space-between;
             align-items: center;
             position: relative;
-            z-index: 1; /* Ensure header is above footer */
+            z-index: 2; /* Ensure header is above footer */
         }
         .logo img {
             max-height: 60px;
@@ -64,6 +66,8 @@
             background-color: rgba(0, 0, 0, 0.8);
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            z-index: 1; /* Ensure container is above footer */
         }
         section {
             padding: 40px 0;
@@ -88,6 +92,8 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             font-family: 'Rubik Pixels', sans-serif; /* Use Rubik Pixels font */
+            position: relative;
+            z-index: 2; /* Ensure download button is above footer */
         }
         .download-button:hover {
             transform: scale(1.05);
@@ -102,6 +108,10 @@
             bottom: 0;
             width: 100%;
             z-index: 0; /* Ensure footer is behind other content */
+        }
+        footer .container {
+            position: relative;
+            z-index: 1; /* Ensure footer content is above body background */
         }
     </style>
 </head>
@@ -129,10 +139,10 @@
         <div class="container">
             <h2>Features</h2>
             <ul>
-                <li>Best Offline Launcher For Minecraft!</li>
-                <li>No Lag, and Offline Play!</li>
+                <li>No Lag and Free Survival Experience</li>
                 <li>Play with friends on Offline Servers.</li>
-                <li>(!THIS IS AN PRIVATE PROJECT THAT WILL ONLY BE RELEASED IF WISHED FOR!)</li>
+                <li>(PLEASE KNOW THAT THIS PROJECT IS PRIVATE.)</li>
+                <!-- Add more features as needed -->
             </ul>
         </div>
     </section>
@@ -140,14 +150,14 @@
     <section id="download">
         <div class="container">
             <h2>Download CrackCraft</h2>
-            <p>Download the latest version of CrackCraft and start playing Minecraft your way. (THIS IS PRIVATE NON PUBLIC.)</p>
+            <p>Download the latest version of CrackCraft and start playing Minecraft your way!</p>
             <a href="https://github.com/CrackedCraft/CrackedCraft" class="download-button">Download Now</a>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 CrackCraft. All rights reserved.</p>
+            <p>CrackCraft is a private project never being released to the public.</p>
         </div>
     </footer>
 </body>
