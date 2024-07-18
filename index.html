@@ -2,27 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <title>CrackCraft - Cracked Minecraft Launcher</title>
     <link rel="stylesheet" href="styles.css">
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!-- Google Fonts - Optional (You can choose different fonts) -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Rubik Pixels -->
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
     <style>
         /* Basic Reset and Styling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Roboto', sans-serif; /* Optional: Use Google Fonts for consistent typography */
+            font-family: 'Rubik Pixels', sans-serif; /* Use Rubik Pixels font */
         }
         body {
             background-color: #222;
             color: #fff;
             line-height: 1.6;
-            position: relative; /* Ensure body covers full height */
-            min-height: 100vh; /* Ensure body covers full height */
+            transform: scale(0.9); /* Zoom out to 90% */
+            transform-origin: center top;
+            overflow-x: hidden; /* Hide horizontal scrollbar caused by zoom out */
         }
         header {
             background-color: rgba(0, 0, 0, 0.8);
@@ -70,6 +71,7 @@
         }
         h1, h2 {
             color: #fff;
+            font-family: 'Rubik Pixels', sans-serif; /* Use Rubik Pixels font */
         }
         p {
             color: #ccc;
@@ -85,6 +87,7 @@
             margin-top: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: 'Rubik Pixels', sans-serif; /* Use Rubik Pixels font */
         }
         .download-button:hover {
             transform: scale(1.05);
@@ -137,7 +140,7 @@
     <section id="download">
         <div class="container">
             <h2>Download CrackCraft</h2>
-            <p>Download the latest version of CrackCraft and start playing Minecraft your way!</p>
+            <p>Download the latest version of CrackCraft and start playing Minecraft your way. (THIS IS PRIVATE NON PUBLIC.)</p>
             <a href="https://github.com/CrackedCraft/CrackedCraft" class="download-button">Download Now</a>
         </div>
     </section>
