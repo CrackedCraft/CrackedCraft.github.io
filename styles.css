@@ -9,16 +9,20 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0;
+    background-image: url('https://i.pinimg.com/originals/2e/78/c7/2e78c79cebbd4632cd41546a3138013e.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative; /* Ensure position context for logo */
 }
 
 .logo img {
@@ -52,7 +56,7 @@ nav ul li a:hover {
     max-width: 800px;
     margin: 20px auto;
     padding: 0 20px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -83,7 +87,7 @@ h1, h2 {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     text-align: center;
     padding: 10px 0;
