@@ -1,2 +1,0 @@
-# CrackedCraft.github.io
-CRACKEDCRAFT WEBSITE THING IDK
